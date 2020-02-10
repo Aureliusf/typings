@@ -255,6 +255,11 @@ document.addEventListener('keydown', e => {
       hideThemeCenter();
       inputField.focus();
     }
+  } else if (!document.querySelector('#help-center').classList.contains('hidden')) {
+    if (e.key === 'Escape'){
+      hideHelpCenter();
+      inputField.focus();
+    }
   }
 });
 
@@ -427,6 +432,9 @@ document.getElementById('show-themes').addEventListener('keydown', (e) => {
 });
 
 function showThemeCenter() {
+    if (!document.querySelector('#help-center').classList.contains('hidden')) {
+        hideHelpCenter();
+    }
   document.getElementById('theme-center').classList.remove('hidden');
   document.getElementById('command-center').classList.add('hidden');
 }
@@ -436,4 +444,14 @@ function hideThemeCenter() {
   document.getElementById('command-center').classList.remove('hidden');
 }
 
-
+function showHelpCenter() {
+        if (!document.querySelector('#theme-center').classList.contains('hidden')) {
+        hideThemeCenter();
+    }
+  document.getElementById('help-center').classList.remove('hidden');
+  document.getElementById('command-center').classList.add('hidden');
+}
+function hideHelpCenter() {
+  document.getElementById('help-center').classList.add('hidden');
+  document.getElementById('command-center').classList.remove('hidden');
+}

@@ -62,9 +62,28 @@
       <div id="left-wing" onClick="hideThemeCenter();">< back</div>
       <div id="theme-area"></div>
     </div>
+        
+    <div id="help-center" class="hidden">
+      <div id="left-wing" onClick="hideHelpCenter();">< back</div>
+          <div id="help-area">
+          <div>
+              <h1 id="help-titles">theme</h1>
+              <p id="help-text">type the theme code for example <b>dracula</b> in the text box then hit [windows: alt + t], [mac: cmd + ctrl + t], [linux: super + ctrl + t or alt + t] for every theme refer to the <b id="show-themes"class="button" onClick="showThemeCenter();" tabindex="4">themes</b> section</p>
+              <h1 id="help-titles">language</h1>
+              <p id="help-text">type the language code for example <b>german</b> in the text box then hit [windows: alt + l], [mac: cmd + ctrl + l], [linux: super + ctrl + l or alt + l] for every language refer to <u><a href="https://github.com/briano1905/typings#typings" id="user-guide-link">user guide</a></u></p>
+              <h1 id="help-titles">typing mode</h1>
+              <p id="help-text">type the mode code <b>time</b> or <b>wordcount</b> in the text box then hit [windows: alt + m], [mac: cmd + ctrl + m], [linux: super + ctrl + m or alt + m]</p>
+              <h1 id="help-titles">punctuation</h1>
+              <p id="help-text">type <b>true</b> or <b>false</b> then hit [windows: alt + p], [mac: cmd + ctrl + p], [linux: super + ctrl + p or alt + p] to activate/deactivate punctuations</p>
+              <h2 id="help-titles">for more info check the user guide</h2>
+          </div>
+          </div>
+    </div>        
+        
     <div id="footer">
       <a href="https://github.com/briano1905/typings#typings" target="_blank" tabindex="3">user guide</a>/
-      <div id="show-themes"class="button" onClick="showThemeCenter();" tabindex="4">themes</div>
+      <div id="show-themes"class="button" onClick="showThemeCenter();" tabindex="4">themes</div>/
+        <div id="show-themes"class="button" onClick="showHelpCenter();" tabindex="4">commands</div>
     </div>
     <script src="main.js"></script>
   </body>

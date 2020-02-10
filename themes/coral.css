@@ -1,0 +1,90 @@
+/*
+Colors inspired by GMK Coral by HoodrowThrillson
+https://geekhack.org/index.php?topic=101926.0
+
+living coral: #F9645C
+limpet shell: #93D8D8
+GMK white base: #FEFDF8
+*/
+
+body {
+  background: #93D8D8;
+}
+
+#header {
+  color: #F9645C;
+}
+
+#left-wing {
+  color: #FEFDF8;
+}
+
+#right-wing {
+  color: #F9645C;
+}
+
+#typing-area, #theme-area {
+  background: #FEFDF8;
+}
+
+#text-display {
+  color: #F9645C;
+}
+
+#input-field {
+  background: #93D8D8;
+  color: #2e2f33;
+}
+
+#input-field.wrong {
+  background: rgba(210, 135, 130, 0.3);
+}
+
+#redo-button {
+  background: #F9645C;
+  color: #FEFDF8;
+}
+
+#footer {
+  color: #F9645C;
+}
+
+.highlight {
+  color: #93D8D8;
+}
+
+.correct {
+  color: #6f8c70;
+}
+
+.wrong {
+  color: #F0492E;
+}
+
+.background {
+    color: #F9645C
+}
+
+#help-titles {
+    color: #F9645C
+}
+
+#help-text {
+    color: #93D8D8
+}
+
+#help-area {
+    color: #93D8D8
+}
+
+#help-area{
+  background: #FEFDF8;
+}
+
+#user-guide-link{
+    color: #F9645C
+}
+
+b {
+    color: unset
+}
